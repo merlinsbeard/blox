@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>blackbox testing Home Page</title>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+<style>
+body { color: white; }
+header{
+    height: 20em;
+    background: #2d2d2d;
+}
+
+header center img{ height: 6em; margin-top:4em;  }
+.main_body { background: #412b45; padding-top: 5em; }
+.main_body li { 
+    height: 100%;
+    overflow :hidden;
+    display: inline-block;
+    background-size: 100% 100%;
+    margin: 1.5em;
+}
+p { font-size: 16px; }
+.main_body ul { margin-left: -3em; }
+.main_body li > a{ 
+    display: block;
+    height: 3.5em;
+    overflow :hidden;
+    width: 3.5em;
+}
+section.smartphone, section.desktop { margin-bottom: 8em;}
+p{ margin: 1.5em; }
+.download { width: 15em; margin: auto;height:3.5em;}
+
+.music { background: url(images/music.png) no-repeat; }
+
+.video { background: url(images/video.png) no-repeat;}
+
+.files { background: url(images/fileshare.png) no-repeat;}
+
+footer { background: #412b45; }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <center>
+                <img src="images/logo1.png"></img><br>
+                <span class="text-center">Connect using:</br>
+                    <strong>
+                        http://192.168.0.18<br>
+                    </strong>
+                    or</br>
+                    <strong>
+                        http://blackbox/
+                    </strong>
+                </span>
+            </center>
+        </div>
+    </header>
+
+    <section class="main_body">
+        <div class="container">
+            <section class="smartphone">
+                <div class="row text-center">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        
+                        <img src="images/forsmartphones.png" />
+                        <p class="description">For Smartphone and Tablet Users</p>
+                        <ul>
+                            <li class="music"><a href="//192.168.0.18/mpd.apk"></a></li>
+                            <li class="video"><a href="//192.168.0.18:32400/web"></a></li>
+                            <li class="files"><a href="//192.168.0.18/owncloud"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <p>
+                        Download & install the music app 
+                        and play music faster and easy.
+                        </p>
+                        <a href="//192.168.0.18/mpd.apk" class="btn btn-default btn-lg btn-block download"><span style="display:block; margin:.5em;">Download</span></a>
+                        <p>
+                        Upload your Songs, Videos, and Files 
+                        using Owncloud and play it anytime, 
+                        anywhere in the building.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="desktop">
+                <div class="row text-center">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        
+                        <img src="images/fordesktop.png" />
+                        <p class="description">For Desktop and Laptop Users</p>
+                        <ul>
+                            <li class="music"><a href="//blackbox.local/mpd.apk"></a></li>
+                            <li class="video"><a href="//blackbox.local:32400/web"></a></li>
+                            <li class="files"><a href="//blackbox.local/owncloud"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <p class="text-center">
+                        Uploads and Downloads are much faster
+                        on desktops computers. You can upload 
+                        and download directly at
+                        <strong>Network>Blox</strong>
+                        </p>
+                        <img src="images/cloud.png" />
+                    </div>
+                </div>
+            </section>
+            
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p class="text-center">A different home experience.
+           (c)2014</p>
+        </div>
+    </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
