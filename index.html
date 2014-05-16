@@ -41,6 +41,8 @@ p{ margin: 1.5em; }
 
 .files { background: url(images/fileshare.png) no-repeat;}
 
+.torrent{ background: url(images/fileshare.png) no-repeat; background-size: 100% auto;}
+.sickbeard{ background: url(images/fileshare.png) no-repeat; background-size: 100% auto;}
 footer { background: #412b45; }
 </style>
 </head>
@@ -51,11 +53,11 @@ footer { background: #412b45; }
                 <img src="images/logo1.png"></img><br>
                 <span class="text-center">Connect using:</br>
                     <strong>
-                        http://192.168.0.18<br>
+                        http://192.168.0.254<br>
                     </strong>
                     or</br>
                     <strong>
-                        http://blox/
+                        http://blackbox/
                     </strong>
                 </span>
             </center>
@@ -72,8 +74,10 @@ footer { background: #412b45; }
                         <p class="description">For Smartphone and Tablet Users</p>
                         <ul>
                             <li class="music"><a href="files/mpd.apk"></a></li>
-                            <li class="video"><a href="//192.168.0.18:32400/web"></a></li>
-                            <li class="files"><a href="//192.168.0.18/owncloud"></a></li>
+                            <li class="video"><a href="//192.168.0.254:32400/web"></a></li>
+                            <li class="files"><a href="//192.168.0.254/owncloud"></a></li>
+                            <li class="torrent"><a href="//192.168.0.254:9091"></a></li>
+                            <li class="sickbeard"><a href="//192.168.0.254:8081"></a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
@@ -81,7 +85,7 @@ footer { background: #412b45; }
                         Download & install the music app 
                         and play music faster and easy.
                         </p>
-                        <a href="//192.168.0.18/mpd.apk" class="btn btn-default btn-lg btn-block download"><span style="display:block; margin:.5em;">Download</span></a>
+                        <a href="//192.168.0.254/mpd.apk" class="btn btn-default btn-lg btn-block download"><span style="display:block; margin:.5em;">Download</span></a>
                         <p>
                         Upload your Songs, Videos, and Files 
                         using Owncloud and play it anytime, 
@@ -98,9 +102,11 @@ footer { background: #412b45; }
                         <img src="images/fordesktop.png" />
                         <p class="description">For Desktop and Laptop Users</p>
                         <ul>
-                            <li class="music"><a href="//blox.local/mpd.apk"></a></li>
-                            <li class="video"><a href="//blox.local:32400/web"></a></li>
-                            <li class="files"><a href="//blox.local/owncloud"></a></li>
+                            <li class="music"><a href="//blackbox.local/mpd.apk"></a></li>
+                            <li class="video"><a href="//blackbox.local:32400/web"></a></li>
+                            <li class="files"><a href="//blackbox.local/owncloud"></a></li>
+                            <li class="torrent"><a href="//blackbox.local:9091"></a></li>
+                            <li class="sickbeard"><a href="//blackbox.local:8081"></a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
